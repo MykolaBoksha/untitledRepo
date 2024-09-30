@@ -1,7 +1,7 @@
 /**
  * Done by:
- * Student Name: Severyn Kotyhoroshko
- * Student Group: 123
+ * Student Name: Mykola Boksha
+ * Student Group: 121
  * Lab 1.5
  */
 
@@ -10,30 +10,39 @@
 
 using namespace std;
 
+bool ULO1(bool x) {
+    return !x; // Логічне Ні
+}
+
+bool ULO2(bool x) {
+    return !x; // Логічне Ні
+}
+
+bool ULO3(bool x) {
+    return !x; // Логічне Ні
+}
+
+// Операції Відношення
+bool OV1(int a, int b) {
+    return a == b; // Операції рівності
+}
+
+bool OV2(int c, int d) {
+    return c != d; // Операції нерівності
+}
+
+// Бінарні логічні операції
+bool BLO(bool x, bool y) {
+    return x ^ y; // Побітове або
+}
+
 int main() {
-    {
-        int a = 10;
-        int b = 20;
-        int c = 30;
-        int d = 40;
+    // перша строка
+    int A1 = 6, B1 = 2, C1 = 7, D1 = 14;
+    // друга строка
+    int A2 = 7, B2 = 7, C2 = 24, D2 = 1;
 
-        // <УЛО1> (<УЛО2> (A<ОВ1>B) <БЛО> (<УЛО3> (C<ОВ2>D)))
-        //  empty (  !    (a == b)    ^   (   !   (c != d)))
-        bool res = (!(a == b) ^ (!(c != d)));
-        cout << "res: " << boolalpha << res << endl;
-    }
-
-    {
-        int a = 10;
-        int b = 20;
-        int c = 30;
-        int d = 40;
-
-        // <УЛО1> (<УЛО2> (A<ОВ1>B) <БЛО> (<УЛО3> (C<ОВ2>D)))
-        //  empty (  !    (a == b)    and   (   !   (c != d)))
-        bool res = (!(a == b) and (!(c != d)));
-        cout << "res: " << boolalpha << res << endl;
-    }
+    bool result1, result2;
 
     return 0;
 }
